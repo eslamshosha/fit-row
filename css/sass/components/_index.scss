@@ -1,7 +1,6 @@
 /*           main                    */
 main {
   position: relative;
-  z-index: 1;
   width: 100%;
   padding-top: 60px;
   margin-bottom: 120px;
@@ -200,6 +199,9 @@ main {
 .about-content {
   padding-top: 35px;
   text-align: start;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   .section-pargh {
     font-weight: 400;
     font-size: 20px;
@@ -225,7 +227,7 @@ main {
 
   /* responsive settings */
   --swiper-mobile-width: 90%;
-  --swiper-mobile-inactive-scale: 0.95;
+  --swiper-mobile-inactive-scale: 0.85;
   .swiper {
     position: relative;
     width: 100%;

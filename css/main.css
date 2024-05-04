@@ -460,6 +460,8 @@ header {
   width: 100%;
   z-index: 200;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
 .top-header a {
@@ -715,7 +717,6 @@ header {
 /*           main                    */
 main {
   position: relative;
-  z-index: 1;
   width: 100%;
   padding-top: 60px;
   margin-bottom: 120px;
@@ -918,6 +919,9 @@ main {
 .about-content {
   padding-top: 35px;
   text-align: start;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .about-content .section-pargh {
   font-weight: 400;
@@ -943,7 +947,7 @@ main {
   --swiper-inactive-scale: 0.85; /* makes the other slide smaller */
   /* responsive settings */
   --swiper-mobile-width: 90%;
-  --swiper-mobile-inactive-scale: 0.95;
+  --swiper-mobile-inactive-scale: 0.85;
 }
 .about-img-cont .swiper {
   position: relative;
@@ -2477,6 +2481,11 @@ textarea.form-input {
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 767px) {
+  .payment-method .check-label {
+    font-size: 14px;
+  }
+}
 .payment-method .check-label .checkmark {
   position: relative;
 }
@@ -3765,6 +3774,7 @@ html[dir=rtl] #msform .action-button-previous i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: start;
   transition: all 0.3s ease-in-out;
   font-weight: 400;
   font-size: 16px;
@@ -3773,6 +3783,11 @@ html[dir=rtl] #msform .action-button-previous i {
   background: #2c2c2e;
   border: 1px solid #2c2c2e;
   cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .main-label {
+    font-size: 14px;
+  }
 }
 .main-label:has(input:checked) {
   background-color: #556c34;

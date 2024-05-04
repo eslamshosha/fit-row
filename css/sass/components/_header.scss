@@ -127,7 +127,8 @@ header {
   width: 100%;
   z-index: 200;
   transition: all 0.3s ease-in-out;
-  // background-color: $white;
+  position: relative;
+  z-index: 1;
 }
 .top-header a {
   text-decoration: none;

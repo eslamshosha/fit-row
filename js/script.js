@@ -123,15 +123,28 @@ $(document).ready(function () {
     $select2.select2();
   }
   //swiper slider
-  const swiper = new Swiper(".about-img-cont .swiper", {
-    loop: true,
+  const swiperImg = new Swiper(".about-img-cont .swiper", {
+    // loop: true,
     centeredSlides: true,
     slidesPerView: 3,
     autoplay: {
       delay: 5000,
       disableOnInteraction: true,
     },
+    on: {
+      click() {
+        swiperImg.slideTo(this.clickedIndex);
+      },
+    },
   });
+  const swiperContent = new Swiper(".about-content .swiper", {
+    // loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    allowTouchMove: false
+  });
+  swiperImg.controller.control = swiperContent;
+  // swiperContent.controller.control = swiperImg;
   const swiperVideos = new Swiper(".videos-swiper .swiper", {
     loop: false,
     centeredSlides: true,
@@ -250,8 +263,9 @@ $(document).ready(function () {
       .parent()
       .parent()
       .parent()
-      .siblings(".measure-parent").find(".radio-text");
-      console.log(radioText);
+      .siblings(".measure-parent")
+      .find(".radio-text");
+    console.log(radioText);
     radioText.empty().append(selectedValue);
   });
 });

@@ -388,6 +388,9 @@ textarea.form-input {
     font-size: 16px;
     text-transform: capitalize;
     @include tr;
+    @include max-767 {
+      font-size: 14px;
+    }
     .checkmark {
       position: relative;
     }

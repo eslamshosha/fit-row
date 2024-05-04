@@ -303,6 +303,7 @@ body.account-page {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: start;
   @include tr;
   font-weight: 400;
   font-size: 16px;
@@ -311,6 +312,9 @@ body.account-page {
   background: #2c2c2e;
   border: 1px solid #2c2c2e;
   cursor: pointer;
+  @include max-767 {
+    font-size: 14px;
+  }
   &:has(input:checked) {
     background-color: #556c34;
     border-color: $hover;
