@@ -15,6 +15,7 @@ body {
   background-size: cover;
   padding-bottom: 51px;
   position: relative;
+  z-index: 1;
 }
 .footer-right{
   position: absolute;
@@ -192,11 +193,11 @@ html[dir="ltr"] .progress-bar {
   height: 40px;
   text-align: center;
   border-radius: 50%;
-  background-color: $white;
-  font-size: 20px;
+  background-color: $main;
+  font-size: 18px;
   border: none;
   outline: none !important;
-  color: $main;
+  color: $white;
   text-decoration: none !important;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -204,7 +205,7 @@ html[dir="ltr"] .progress-bar {
   &:hover,
   &:focus {
     background-color: $hover;
-    color: $white;
+    color: $main;
   }
 }
 @include max-767 {

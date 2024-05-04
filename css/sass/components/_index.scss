@@ -1,6 +1,7 @@
 /*           main                    */
 main {
   position: relative;
+  z-index: 1;
   width: 100%;
   padding-top: 60px;
   margin-bottom: 120px;
@@ -326,6 +327,26 @@ main {
 /* features-section */
 .features-section {
   margin-bottom: 75px;
+  position: relative;
+}
+.features-section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(195, 252, 107, 0.2) 0%,
+    rgba(195, 252, 107, 0.166) 18.65%,
+    rgba(195, 252, 107, 0.108) 45.73%,
+    rgba(195, 252, 107, 0) 100%
+  );
+
+  z-index: -1;
+  opacity: 0.4;
 }
 .features-title {
   font-weight: 800;
@@ -345,7 +366,7 @@ main {
 }
 .features-cont {
   display: grid;
-  // overflow: hidden;
+  overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 64px;
 }
@@ -358,13 +379,16 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 22px;
-    gap: 6px;
-    font-weight: 700;
+    gap: 12px;
+    font-weight: 600;
     font-size: 22px;
     color: $white;
     text-transform: capitalize;
     position: relative;
     width: fit-content;
+    @include max-767 {
+      font-size: 18px;
+    }
   }
   .features-icon {
     width: 63px;
@@ -373,6 +397,10 @@ main {
     background-color: #242424;
     @include flexCenter;
     flex-shrink: 0;
+    img {
+      max-width: 32px;
+      max-height: 32px;
+    }
   }
   .features-tips {
     padding: 8px 14px 15px;
@@ -416,8 +444,133 @@ main {
 .features-progress {
   position: relative;
   overflow: hidden;
+  margin-top: 20%;
+  // display: flex;
+  // align-items: center;
+}
+.features-icon1 {
+  margin-inline-start: 25%;
+  margin-bottom: 45px;
+
+  img {
+    width: 22px;
+    height: 27px;
+  }
+}
+.features-icon-cont {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.features-icon2 {
+  position: relative;
+  width: max-content;
+  padding-inline-end: 20px;
+  div {
+    text-align: start;
+    padding-inline-start: 10px;
+    font-weight: 400;
+    color: $white;
+    font-size: 12px;
+    display: block;
+  }
+  img:not(.features-heart) {
+    width: 155px;
+    html[dir="rtl"] & {
+      transform: scaleX(-1);
+    }
+  }
+  .features-heart {
+    width: 21px;
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    animation: 1.5s ease 0s infinite beat;
+  }
+}
+@keyframes beat {
+  0%,
+  50%,
+  100% {
+    transform: scale(1, 1);
+  }
+  30%,
+  80% {
+    transform: scale(0.92, 0.95);
+  }
+}
+.features-icon3 {
+  position: relative;
+  width: max-content;
+  margin-top: 40px;
+  padding-top: 35px;
+  padding-inline-end: 5px;
+}
+.feet-icon {
+  width: 26px;
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+}
+.icon-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  span:nth-of-type(2) {
+    font-size: 9px;
+  }
+}
+.water-text {
+  font-weight: 700;
+  font-size: 12px;
+  color: $white;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 100%;
+  gap: 8px;
+  z-index: 1;
+  .water-num {
+    line-height: 38px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+  }
+}
+.features-icon4 {
+  position: relative;
+  width: max-content;
+  padding-top: 15px;
+  padding-inline-end: 10px;
+}
+.fire-icon {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+}
+.features-icon5 {
+  position: relative;
+  width: max-content;
+  margin-top: 90px;
+  padding-top: 15px;
+  padding-inline-end: 30px;
+  img {
+    width: 32px;
+  }
+  .icon-bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    padding: 15px;
+  }
 }
 .features-btn {
   .custom-btn {
@@ -434,8 +587,10 @@ main {
 @media (max-width: 991px) {
   .features-cont {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
+
 /* features-section */
 /* trainer section */
 .trainer-section {
@@ -512,7 +667,7 @@ main {
   .trainer-img-cont {
     justify-content: center;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     .trainer-img-wrapper {
       span {
         font-size: 12px;
@@ -530,6 +685,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 10px;
+    width: 100%;
   }
 }
 /* trainer section */
@@ -777,6 +933,9 @@ main {
 .package-section {
   margin-bottom: 320px;
   overflow: hidden;
+  @include max-767 {
+    margin-bottom: 120px;
+  }
   .features-head {
     margin-bottom: 50px;
   }
@@ -1099,47 +1258,3 @@ main {
   display: none;
 }
 /* package-section */
-.test {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  color: $white;
-  position: relative;
-  background-color: red;
-  border: 23px solid #494949;
-  span {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: white;
-    top: 0;
-    left: 0;
-    display: block;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: calc(100% + 23px);
-      width: calc(100% + 23px);
-      // width: 23px;
-      // height: 23px;
-      inset: 0;
-    border-radius: 50%;
-      background-color: #c4ff66;
-      z-index: 1;
-      border: 23px solid #494949;
-    }
-  }
-}
-.circle-progress-value {
-  stroke-width: 6px;
-  stroke: hsl(39, 100%, 50%);
-}
-.circle-progress-circle {
-  stroke-width: 6px;
-  stroke: hsl(39, 100%, 85%);
-}
-.circle-progress-text {
-  fill: hsl(39, 100%, 50%);
-}
