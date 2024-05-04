@@ -1,0 +1,51 @@
+/*                                   footer                            */
+footer {
+  text-align: center;
+}
+.footer-social {
+  margin-bottom: 35px;
+}
+.footer-email {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.35px;
+  color: $white;
+  margin-bottom: 12px;
+  display: inline-block;
+  @include tr;
+  &:hover {
+    color: $hover;
+  }
+}
+.social {
+  @include flexCenter;
+  gap: 8px;
+  margin-bottom: 20px;
+  a {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    @include flexCenter;
+    font-size: 16px;
+    background-color: #101010;
+    color: $white;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $hover;
+      color: $main;
+    }
+  }
+}
+.footer-img {
+  width: 52px;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer-right {
+  font-size: 18px;
+  font-weight: 400;
+  color: $white;
+  padding: 12px;
+  background-color: #101010;
+}

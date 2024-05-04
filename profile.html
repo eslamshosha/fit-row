@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>fit row</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.rtl.min.css" /> -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/flatpickr.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="internal-page">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- header section -->
+    <header>
+      <div class="container">
+        <div class="top-header">
+          <div class="nav-header">
+            <figure class="img-logo">
+              <a href="index.html"
+                ><img src="images/logo.png" class="img-fluid" alt="logo" />
+              </a>
+            </figure>
+            <div class="navgition">
+              <div class="nav-head">
+                <div class="dropdown lang-anchor">
+                  <div class="lang-cont">
+                    <i class="fa-light fa-globe"></i>
+                    <span>en</span>
+                    <i class="fa-regular fa-angle-down"></i>
+                  </div>
+                  <div class="dropdown-content">
+                    <a class="cat-drop" href="#">en</a>
+                    <a class="cat-drop" href="#">العربية</a>
+                  </div>
+                </div>
+                <button class="close-menu">
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+              </div>
+              <ul class="big-menu list-unstyled">
+                <li>
+                  <a href="#"> home </a>
+                </li>
+                <li>
+                  <a href="#"> about</a>
+                </li>
+                <li>
+                  <a href="#"> contact us</a>
+                </li>
+              </ul>
+              <div class="btn-cont">
+                <a href="#" class="header-ancor"> JOIN OUR TEAM </a>
+                <a href="#" class="header-ancor d-none">
+                  CREATE ACCOUNT / LOGIN
+                </a>
+              </div>
+            </div>
+            <div class="btn-cont">
+              <a href="#" class="header-ancor"> JOIN OUR TEAM </a>
+              <a href="#" class="header-ancor d-none">
+                CREATE ACCOUNT / LOGIN
+              </a>
+            </div>
+            <div class="header-cont">
+              <div class="dropdown cat-anchor">
+                <div class="user-cont">
+                  <img src="images/profile.png" alt="profile" />
+                  <span>mahmoud</span>
+                  <i class="fa-regular fa-angle-down"></i>
+                </div>
+                <div class="dropdown-content">
+                  <a class="cat-drop" href="#">my profile</a>
+                  <a class="cat-drop" href="#">log out</a>
+                </div>
+              </div>
+              <div class="dropdown lang-anchor">
+                <div class="lang-cont">
+                  <i class="fa-light fa-globe"></i>
+                  <span>en</span>
+                  <i class="fa-regular fa-angle-down"></i>
+                </div>
+                <div class="dropdown-content">
+                  <a class="cat-drop" href="#">en</a>
+                  <a class="cat-drop" href="#">العربية</a>
+                </div>
+              </div>
+              <button class="menu-bars" id="menu-id">
+                <i class="fa-regular fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section     -->
+    <!-- breadcrumb section -->
+    <section class="breadcrumb-sec">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="item-home">
+            <a class="bread-link bread-home" href="index.html">home </a>
+          </li>
+          <li class="active">
+            <span class="bread-current"> Profile</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- breadcrumb section -->
+    <section class="single-page">
+      <div class="container">
+        <div class="section-cont profile">
+          <h3 class="single-head">Account Settings</h3>
+          <div class="profile-cont">
+            <figure class="account-img">
+              <img src="images/account.png" alt="profile" class="img-fluid" />
+            </figure>
+            <span class="account-name">Mahmoud</span>
+            <form>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <span class="profile-info"> name </span>
+                      <div class="profile-data">
+                        <span>Mahmoud</span>
+                        <i class="fa-regular fa-angle-right"></i>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-input"
+                          placeholder="name"
+                          value="Mahmoud"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      <span class="profile-info"> Weight </span>
+                      <div class="profile-data">
+                        <span>52.7</span>
+                        <i class="fa-regular fa-angle-right"></i>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-group">
+                        <input
+                          type="number"
+                          class="form-input"
+                          placeholder="weight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      <span class="profile-info"> Date of Birth </span>
+                      <div class="profile-data">
+                        <span>Nov 30, 1990</span>
+                        <i class="fa-regular fa-angle-right"></i>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-group">
+                        <div class="date-div-cont">
+                          <input
+                            class="selector form-input custom-input"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingfourth">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsefourth"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsefourth"
+                    >
+                      <span class="profile-info"> Email </span>
+                      <div class="profile-data">
+                        <span>Mahmoud@email.com</span>
+                        <i class="fa-regular fa-angle-right"></i>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapsefourth"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingfourth"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-input"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-setting">
+                <span class="profile-info"> FAMILY </span>
+                <div class="sub-family-cont">
+                  <a href="add-sub-account.html">
+                    <div class="add-ancor">
+                      <span class="sub-bg">
+                        <img src="images/family-1.png" alt="family" />
+                      </span>
+                      <span class="add-icon"><i class="fa-regular fa-plus"></i></span>
+                    </div>
+                    <span>mother</span>
+                  </a>
+                  <div class="add-sub-small">
+                    <a href="add-sub-account.html">
+                      <div class="add-ancor">
+                        <span class="sub-bg">
+                          <img src="images/family-2.png" alt="family" />
+                        </span>
+                        <span class="add-icon"><i class="fa-regular fa-plus"></i></span>
+                      </div>
+                      <span>son1</span>
+                    </a>
+                    <a href="add-sub-account.html">
+                      <div class="add-ancor">
+                        <span class="sub-bg">
+                          <img src="images/family-2.png" alt="family" />
+                        </span>
+                        <span class="add-icon"><i class="fa-regular fa-plus"></i></span>
+                      </div>
+                      <span>son2</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="custom-btn submit-btn">pay</button>
+            </form>
+          </div>
+        </div>
+        <div class="section-cont profile">
+          <h3 class="single-head">Price Plan</h3>
+          <div class="item-grid">
+            <div class="plan-box">
+              <h5 class="box-head">Current Plan</h5>
+              <div class="plan-head">
+                <div class="plan-state">
+                  <span>Monthly</span> <span>$0.96/Day</span>
+                </div>
+                <div class="plan-price">$29</div>
+              </div>
+              <div
+                class="pie"
+                data-pie='{ "lineargradient": ["#c4ff66","#494949"], "percent": 60, "colorSlice": "#c4ff66", "colorCircle": "#494949","number": false, "strokeWidth": 15, "number": false }'
+              >
+                <div class="progress-info">
+                  <span class="progress-head">Remaining</span>
+                  <span class="progress-cont">22 Days</span>
+                  <span class="progress-date">Exp. in 22 Mar 2024</span>
+                </div>
+              </div>
+              <a href="#" class="custom-btn">renew</a>
+            </div>
+            <div class="plan-box">
+              <h5 class="box-head">Current Plan</h5>
+              <form>
+                <div class="nav-wrapper">
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="planFirst"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-first"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-first"
+                        aria-selected="true"
+                      >
+                        <span>INDIVIDUAL</span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="planSecond"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-second"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-second"
+                        aria-selected="false"
+                      >
+                        <span>DUO</span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="planThird"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-third"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-third"
+                        aria-selected="false"
+                      >
+                        <span>FAMILY </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-first"
+                    role="tabpanel"
+                    aria-labelledby="planFirst"
+                  >
+                    <div class="payment-method">
+                      <div class="form-group">
+                        <div class="check-group">
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>3Month</span> <span>$0.65/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$59</div>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>6Month</span> <span>$0.43/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$79</div>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>yearly</span> <span>$0.27/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$99</div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-second"
+                    role="tabpanel"
+                    aria-labelledby="planSecond"
+                  >
+                    <div class="payment-method">
+                      <div class="form-group">
+                        <div class="check-group">
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>3Month</span> <span>$0.65/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$59</div>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>6Month</span> <span>$0.43/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$79</div>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>yearly</span> <span>$0.27/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$99</div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-third"
+                    role="tabpanel"
+                    aria-labelledby="planThird"
+                  >
+                    <div class="payment-method">
+                      <div class="form-group">
+                        <div class="check-group">
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>3Month</span> <span>$0.65/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$59</div>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>6Month</span> <span>$0.43/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$79</div>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input type="radio" name="pay" />
+                                <span class="checkmark"></span>
+                                <div class="plan-state">
+                                  <span>yearly</span> <span>$0.27/Day</span>
+                                </div>
+                              </span>
+                              <div class="plan-price">$99</div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <button type="submit" class="custom-btn">Change Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="footer-right">© 2023 by LNDNZONE</div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="las la-arrow-up"></i>
+    </button>
+    <!-- arrow to top -->
+
+    <script src="js/circularProgressBar.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
