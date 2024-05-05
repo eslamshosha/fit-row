@@ -148,7 +148,8 @@ main {
 }
 @media (max-width: 991px) {
   main {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    padding-top: 70px;
   }
   .main-cont {
     display: flex;
@@ -190,6 +191,9 @@ main {
   margin-bottom: 80px;
   text-align: center;
   text-transform: uppercase;
+  @include max-767 {
+    font-size: 26px;
+  }
 }
 .about-cont {
   display: grid;
@@ -216,6 +220,9 @@ main {
   color: $hover;
   margin-bottom: 15px;
   text-transform: uppercase;
+  @include max-767 {
+    font-size: 26px;
+  }
 }
 .about-img-cont {
   position: relative;
@@ -357,6 +364,9 @@ main {
   margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
+  @include max-767 {
+    font-size: 26px;
+  }
 }
 .features-head {
   font-weight: 500;
@@ -365,6 +375,9 @@ main {
   margin-bottom: 65px;
   text-align: center;
   text-transform: uppercase;
+  @include max-767 {
+    font-size: 26px;
+  }
 }
 .features-cont {
   display: grid;
@@ -590,6 +603,7 @@ main {
   .features-cont {
     grid-template-columns: 1fr;
     gap: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -597,6 +611,9 @@ main {
 /* trainer section */
 .trainer-section {
   margin-bottom: 50px;
+  @include max-767 {
+    margin-bottom: 70px;
+  }
 }
 .trainer-img-cont {
   display: flex;
@@ -694,6 +711,9 @@ main {
 /* banner section */
 .banner-section {
   margin-bottom: 45px;
+  @include max-767 {
+    margin-bottom: 70px;
+  }
 }
 .banner-cont {
   background-color: #161616;
