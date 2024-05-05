@@ -435,11 +435,20 @@ main {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
+    @include max-991{
+      width: 300px;
+      inset-inline-start: 0;
+    }
   }
   &:last-of-type {
     .features-tips {
       inset-inline-start: unset;
       inset-inline-end: calc(100% + 5px);
+      @include max-991{
+        width: 300px;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+      }
     }
   }
   li:hover .features-tips {

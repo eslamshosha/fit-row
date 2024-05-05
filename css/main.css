@@ -1150,9 +1150,22 @@ main {
   opacity: 0;
   visibility: hidden;
 }
+@media only screen and (max-width: 991px) {
+  .features-list .features-tips {
+    width: 300px;
+    inset-inline-start: 0;
+  }
+}
 .features-list:last-of-type .features-tips {
   inset-inline-start: unset;
   inset-inline-end: calc(100% + 5px);
+}
+@media only screen and (max-width: 991px) {
+  .features-list:last-of-type .features-tips {
+    width: 300px;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+  }
 }
 .features-list li:hover .features-tips {
   opacity: 1;
