@@ -1292,3 +1292,20 @@ input[type="file"] {
     grid-template-columns: 1fr;
   }
 }
+.add-more {
+  font-weight: 500;
+  font-size: 18px;
+  color: $hover;
+  @include tr;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none !important;
+  text-transform: capitalize;
+  background-color: transparent;
+  @include flexCenter;
+  gap: 6px;
+  &:hover{
+    color: $white;
+  }
+}

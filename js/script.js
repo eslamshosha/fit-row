@@ -141,7 +141,7 @@ $(document).ready(function () {
     // loop: true,
     slidesPerView: 1,
     centeredSlides: true,
-    allowTouchMove: false
+    allowTouchMove: false,
   });
   swiperImg.controller.control = swiperContent;
   // swiperContent.controller.control = swiperImg;
@@ -267,6 +267,14 @@ $(document).ready(function () {
       .find(".radio-text");
     console.log(radioText);
     radioText.empty().append(selectedValue);
+  });
+  //add more link input
+  $(function () {
+    $(".add-more").on("click", function (e) {
+      e.preventDefault();
+      var $self = $(this);
+      $self.before($self.prev(".attach-cont").clone());
+    });
   });
 });
 ///////////
