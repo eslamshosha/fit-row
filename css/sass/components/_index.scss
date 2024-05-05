@@ -378,12 +378,17 @@ main {
   @include max-767 {
     font-size: 26px;
   }
+  .features-section &{
+    margin-bottom: 0;
+  }
 }
+
 .features-cont {
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 64px;
+  padding-top: 65px;
 }
 .features-list {
   padding: 0;

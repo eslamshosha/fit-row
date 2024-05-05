@@ -1086,12 +1086,16 @@ main {
     font-size: 26px;
   }
 }
+.features-section .features-head {
+  margin-bottom: 0;
+}
 
 .features-cont {
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 64px;
+  padding-top: 65px;
 }
 
 .features-list {
