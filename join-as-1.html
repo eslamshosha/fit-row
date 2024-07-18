@@ -141,84 +141,190 @@
     <section class="single-page">
       <div class="container">
         <div class="section-cont">
-          <div class="join-cont">
-            <h3 class="form-title">Choose account Type</h3>
-            <p class="form-pargh">Complete Your Data</p>
-            <div class="payment-method">
-              <form action="join-as-2.html">
-                <div class="form-group">
-                  <label class="form-label"> Full Name</label>
-                  <input
-                    type="text"
-                    class="form-input"
-                    placeholder="Write your full name here"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="form-label"> Phone Number</label>
-                  <div class="form-input-relative">
+          <form action="" class="account-form">
+            <fieldset>
+              <div class="join-cont">
+                <h3 class="form-title">Choose account Type</h3>
+                <p class="form-pargh">Complete Your Data</p>
+                <div class="payment-method">
+                  <div class="form-group">
+                    <label class="form-label"> Full Name</label>
                     <input
-                      type="tel"
-                      class="tel-input form-input"
-                      placeholder="Enter Your Phone number"
+                      type="text"
+                      class="form-input"
+                      placeholder="Write your full name here"
                     />
-                    <span class="tel-lang">
-                      <span>965+</span>
-                      <img src="images/flag.png" alt="flag" />
-                    </span>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label"> E-mail Address</label>
-                  <input
-                    type="email"
-                    class="form-input"
-                    placeholder="Write your e-mail address here"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Country</label>
-                  <div class="form-input-relative">
-                    <i class="fa-regular fa-angle-down angle-select"></i>
-                    <select class="select_input" name="city">
-                      <option disabled selected hidden>
-                        Select Your Country
-                      </option>
-                      <option value="two">الرياض</option>
-                      <option value="three">المدينة</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Age</label>
-                  <div class="form-input-relative">
-                    <i class="fa-regular fa-angle-down angle-select"></i>
-                    <select class="select_input" name="city">
-                      <option disabled selected hidden>Select Your Age</option>
-                      <option value="two">1</option>
-                      <option value="three">2</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="terms-cont">
-                  <div class="check-group">
-                    <div class="check-width">
-                      <label class="custom-label">
-                        <input type="checkbox" checked="checked" />
-                        <span class="checkmark custom-checkmark"></span>
-                      </label>
+                  <div class="form-group">
+                    <label class="form-label"> Phone Number</label>
+                    <div class="form-input-relative">
+                      <input
+                        type="tel"
+                        class="tel-input form-input"
+                        placeholder="Enter Your Phone number"
+                      />
+                      <span class="tel-lang">
+                        <span>965+</span>
+                        <img src="images/flag.png" alt="flag" />
+                      </span>
                     </div>
                   </div>
-                  <span class="terms-text"
-                    >Agree <a href="terms.html"> Terms&Conditions</a></span
-                  >
+                  <div class="form-group">
+                    <label class="form-label"> E-mail Address</label>
+                    <input
+                      type="email"
+                      class="form-input"
+                      placeholder="Write your e-mail address here"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Country</label>
+                    <div class="form-input-relative">
+                      <i class="fa-regular fa-angle-down angle-select"></i>
+                      <select class="select_input" name="city">
+                        <option disabled selected hidden>
+                          Select Your Country
+                        </option>
+                        <option value="two">الرياض</option>
+                        <option value="three">المدينة</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Age</label>
+                    <div class="form-input-relative">
+                      <i class="fa-regular fa-angle-down angle-select"></i>
+                      <select class="select_input" name="city">
+                        <option disabled selected hidden>
+                          Select Your Age
+                        </option>
+                        <option value="two">1</option>
+                        <option value="three">2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="terms-cont">
+                    <div class="check-group">
+                      <div class="check-width">
+                        <label class="custom-label">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <span class="terms-text"
+                      >Agree <a href="terms.html"> Terms&Conditions</a></span
+                    >
+                  </div>
                 </div>
-                <button type="submit" class="custom-btn submit-btn">
+                <button
+                  type="button"
+                  class="custom-btn submit-btn next action-button"
+                >
                   Continue
                 </button>
-              </form>
-            </div>
-          </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="join-cont">
+                <h3 class="form-title">Choose account Type</h3>
+                <p class="form-pargh">Attach Your Social Media Links</p>
+                <div class="payment-method">
+                  <div class="attach-cont">
+                    <div class="form-group">
+                      <label class="form-label">Link 1</label>
+                      <div class="form-input-relative">
+                        <i class="fa-regular fa-angle-down angle-select"></i>
+                        <select class="select_input" name="city">
+                          <option disabled selected hidden>
+                            Select Platform
+                          </option>
+                          <option value="two">1</option>
+                          <option value="three">2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Paste link here"
+                      />
+                    </div>
+                  </div>
+                  <button type="button" class="add-more">
+                    <i class="fa-regular fa-plus"></i><span>add more</span>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="custom-btn submit-btn next action-button"
+                >
+                  Continue
+                </button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="join-cont">
+                <h3 class="form-title">Choose account Type</h3>
+                <p class="form-pargh">Upload Required Attachments</p>
+                <div class="payment-method">
+                  <div class="form-group">
+                    <label class="form-label">cv</label>
+                    <div class="position-relative">
+                      <label class="custom-file-upload custom-file">
+                        <input type="file" class="upload-change" />
+                        <span class="upload-btn file-txt" data-title=""></span>
+                      </label>
+                      <button class="file-btn" type="button">
+                        <img src="images/upload.png" alt="upload" />
+                        <span
+                          >Drag & drop file here, or <span>browse</span></span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"
+                      >HEALTH CERTIFICATE / APPROVED EXPERIENCE LETTER</label
+                    >
+                    <div class="position-relative">
+                      <label class="custom-file-upload custom-file">
+                        <input type="file" class="upload-change" />
+                        <span class="upload-btn file-txt" data-title=""></span>
+                      </label>
+                      <button class="file-btn" type="button">
+                        <img src="images/upload.png" alt="upload" />
+                        <span
+                          >Drag & drop file here, or <span>browse</span></span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"
+                      >TESTIFIED CERTIFICATE <span>( OPTIONAL )</span></label
+                    >
+                    <div class="position-relative">
+                      <label class="custom-file-upload custom-file">
+                        <input type="file" class="upload-change" />
+                        <span class="upload-btn file-txt" data-title=""></span>
+                      </label>
+                      <button class="file-btn" type="button">
+                        <img src="images/upload.png" alt="upload" />
+                        <span
+                          >Drag & drop file here, or <span>browse</span></span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="custom-btn submit-btn">
+                  Submit
+                </button>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>

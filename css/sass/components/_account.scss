@@ -63,6 +63,7 @@ body.account-page {
     min-height: 500px;
   }
 }
+.account-form fieldset,
 #msform fieldset {
   border: 0 none;
   border-radius: 0;
@@ -155,6 +156,7 @@ body.account-page {
   }
 }
 /*Hide all except first fieldset*/
+.account-form fieldset:not(:first-of-type),
 #msform fieldset:not(:first-of-type) {
   display: none;
 }
@@ -816,6 +818,11 @@ body.account-page {
     }
   }
 }
+.form-card {
+  .pie {
+    margin: 80px auto 60px;
+  }
+}
 .pie {
   position: relative;
 }
@@ -960,4 +967,18 @@ body.account-page {
       text-transform: capitalize;
     }
   }
+}
+.iti {
+  width: 100%;
+}
+.iti--inline-dropdown .iti__dropdown-content {
+  background-color: #2c2c2e;
+}
+.iti__flag-box,
+.iti__country-name {
+  color: rgba(255, 255, 255, 0.6);
+}
+.iti__search-input {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2c2c2e;
 }
