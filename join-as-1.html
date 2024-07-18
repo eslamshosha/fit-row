@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/css/intlTelInput.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -157,17 +161,12 @@
                   </div>
                   <div class="form-group">
                     <label class="form-label"> Phone Number</label>
-                    <div class="form-input-relative">
-                      <input
-                        type="tel"
-                        class="tel-input form-input"
-                        placeholder="Enter Your Phone number"
-                      />
-                      <span class="tel-lang">
-                        <span>965+</span>
-                        <img src="images/flag.png" alt="flag" />
-                      </span>
-                    </div>
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="tel-input form-input"
+                      placeholder="Enter Your Phone number"
+                    />
                   </div>
                   <div class="form-group">
                     <label class="form-label"> E-mail Address</label>
@@ -346,5 +345,13 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/js/utils.js",
+      });
+    </script>
   </body>
 </html>
