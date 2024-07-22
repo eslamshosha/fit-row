@@ -272,8 +272,12 @@ $(document).ready(function () {
   $(function () {
     $(".add-more").on("click", function (e) {
       e.preventDefault();
+      $(".attach-cont:last").find(".select_input").select2("destroy");
+      var clone = $(".attach-cont:last").clone();
+      // $(this).parent(".payment-method").append(clone);
       var $self = $(this);
       $self.before($self.prev(".attach-cont").clone());
+      $(".select_input").select2();
     });
   });
 });

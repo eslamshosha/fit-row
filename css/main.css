@@ -3766,6 +3766,12 @@ html[dir=rtl] .fieldset-cont .next i {
   max-width: 290px;
 }
 
+.join-cont-btn {
+  width: 100%;
+  max-width: 551px;
+  margin: 30px auto 0;
+}
+
 .next-btn:disabled {
   opacity: 50%;
   cursor: not-allowed;
