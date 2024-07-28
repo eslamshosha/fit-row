@@ -280,6 +280,25 @@ $(document).ready(function () {
       $(".select_input").select2();
     });
   });
+  ///////// **product-qty** /////////
+  $(".qty-plus").on("click", function () {
+    var $parentElm = $(this).parents(".item-qty");
+    var maxVal = parseInt($parentElm.find(".qty-input").attr("data-max"));
+    var value = $parentElm.find(".qty-input").val();
+    if (value < maxVal) {
+      value++;
+    }
+    $parentElm.find(".qty-input").val(value);
+  });
+  $(".qty-minus").on("click", function () {
+    var $parentElm = $(this).parents(".item-qty");
+    var minVal = parseInt($parentElm.find(".qty-input").attr("data-min"));
+    var value = $parentElm.find(".qty-input").val();
+    if (value > minVal) {
+      value--;
+    }
+    $parentElm.find(".qty-input").val(value);
+  });
 });
 ///////////
 //showPass

@@ -344,23 +344,89 @@
           <div class="item-grid">
             <div class="plan-box">
               <h5 class="box-head">Current Plan</h5>
-              <div class="plan-head">
-                <div class="plan-state">
-                  <span>Monthly</span> <span>$0.96/Day</span>
-                </div>
-                <div class="plan-price">$29</div>
+              <div class="nav-wrapper">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="planmain"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-main"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-main"
+                      aria-selected="true"
+                    >
+                      <span>Main plan</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="planadditional"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-additional"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-additional"
+                      aria-selected="false"
+                    >
+                      <span>additional plan</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
-              <div
-                class="pie"
-                data-pie='{ "lineargradient": ["#c4ff66","#494949"], "percent": 60, "colorSlice": "#c4ff66", "colorCircle": "#494949","number": false, "strokeWidth": 15, "number": false }'
-              >
-                <div class="progress-info">
-                  <span class="progress-head">Remaining</span>
-                  <span class="progress-cont">22 Days</span>
-                  <span class="progress-date">Exp. in 22 Mar 2024</span>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-main"
+                  role="tabpanel"
+                  aria-labelledby="planmain"
+                >
+                  <div class="plan-head">
+                    <div class="plan-state">
+                      <span>Monthly</span> <span>$0.96/Day</span>
+                    </div>
+                    <div class="plan-price">$29</div>
+                  </div>
+                  <div
+                    class="pie"
+                    data-pie='{ "lineargradient": ["#c4ff66","#494949"], "percent": 60, "colorSlice": "#c4ff66", "colorCircle": "#494949","number": false, "strokeWidth": 15, "number": false }'
+                  >
+                    <div class="progress-info">
+                      <span class="progress-head">Remaining</span>
+                      <span class="progress-cont">22 Days</span>
+                      <span class="progress-date">Exp. in 22 Mar 2024</span>
+                    </div>
+                  </div>
+                  <a href="#" class="custom-btn">renew</a>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-additional"
+                  role="tabpanel"
+                  aria-labelledby="planadditional"
+                >
+                  <div class="plan-head">
+                    <div class="plan-state">
+                      <span>Additional ( Monthly Family Plan )</span>
+                      <span>per month 7,99 $</span>
+                    </div>
+                    <div class="plan-price">$50</div>
+                  </div>
+                  <div
+                    class="pie"
+                    data-pie='{ "lineargradient": ["#c4ff66","#494949"], "percent": 60, "colorSlice": "#c4ff66", "colorCircle": "#494949","number": false, "strokeWidth": 15, "number": false }'
+                  >
+                    <div class="progress-info">
+                      <span class="progress-head">Remaining</span>
+                      <span class="progress-cont">22 Days</span>
+                      <span class="progress-date">Exp. in 22 Mar 2024</span>
+                    </div>
+                  </div>
+                  <a href="#" class="custom-btn">renew</a>
                 </div>
               </div>
-              <a href="#" class="custom-btn">renew</a>
             </div>
             <div class="plan-box">
               <h5 class="box-head">Other Plans</h5>
@@ -584,8 +650,8 @@
                 </div>
                 <button type="submit" class="custom-btn">Change Plan</button>
               </form>
-              <!-- <div class="or-text">or</div>
-              <a href="#" class="custom-plan-link">Make Your Custom Plan</a> -->
+              <div class="or-text">or</div>
+              <a href="custom-plan.html" class="custom-plan-link">Make Your Custom Plan</a>
             </div>
           </div>
         </div>

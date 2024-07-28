@@ -132,7 +132,7 @@
             <a class="bread-link bread-home" href="index.html">home </a>
           </li>
           <li class="active">
-            <span class="bread-current"> Account</span>
+            <span class="bread-current">Additional Plan</span>
           </li>
         </ol>
       </div>
@@ -141,13 +141,129 @@
     <section class="single-page">
       <div class="container">
         <div class="section-cont">
-          <div class="account-status">
-            <figure>
-              <img src="images/clock.png" alt="UNDER REVIEW" />
-            </figure>
-            <div class="status-text success">UNDER REVIEW</div>
-            <div class="status-head">This request is under review</div>
-            <p class="status-pargh">keep following up with us</p>
+          <div class="payment-cont">
+            <form action="">
+              <div class="note-box">
+                <i class="fa-duotone fa-circle-exclamation"></i>
+                <p>Add family members for 25% more. Choose their plan.</p>
+              </div>
+              <h3 class="custom-plan-head">Select Your additional members</h3>
+              <div class="counter-members">
+                <span>Additional members</span>
+                <div class="qty-price">
+                  <div class="item-qty">
+                    <button class="qty-control qty-plus">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="qty-control qty-minus">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input
+                      type="number"
+                      class="qty-input"
+                      value="1"
+                      data-max="10"
+                      data-min="1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <h3 class="custom-plan-head">custom Price Plans</h3>
+              <div
+                class="payment-method custom-plan"
+                style="margin-bottom: 25px"
+              >
+                <div class="coach-btn">
+                  <div class="check-group">
+                    <div class="check-width">
+                      <label class="check-label">
+                        <span class="payment-radio">
+                          <input type="radio" name="coach" />
+                          <span class="checkmark"></span>
+                          <span>Without a Coach</span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="check-width">
+                      <label class="check-label">
+                        <span class="payment-radio">
+                          <input type="radio" name="coach" />
+                          <span class="checkmark"></span>
+                          <span>With a Coach</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="check-group">
+                    <div class="check-width">
+                      <label class="check-label">
+                        <span class="payment-radio">
+                          <input type="radio" name="pay" />
+                          <span class="checkmark"></span>
+                          <div class="plan-state">
+                            <span>1 Month</span>
+                            <span>$25/Additional Member</span>
+                          </div>
+                        </span>
+                        <div class="plan-price">$69</div>
+                      </label>
+                    </div>
+                    <div class="check-width">
+                      <label class="check-label">
+                        <span class="payment-radio">
+                          <input type="radio" name="pay" />
+                          <span class="checkmark"></span>
+                          <div class="plan-state">
+                            <span>3 Month</span>
+                            <span>$35/Additional Member</span>
+                          </div>
+                        </span>
+                        <div class="plan-price">$119</div>
+                      </label>
+                    </div>
+                    <div class="check-width">
+                      <label class="check-label">
+                        <span class="payment-radio">
+                          <input type="radio" name="pay" />
+                          <span class="checkmark"></span>
+                          <div class="plan-state">
+                            <span>6 Month</span>
+                            <span>$45/Additional Member</span>
+                          </div>
+                        </span>
+                        <div class="plan-price">$159</div>
+                      </label>
+                    </div>
+                    <div class="check-width">
+                      <label class="check-label">
+                        <span class="payment-radio">
+                          <input type="radio" name="pay" />
+                          <span class="checkmark"></span>
+                          <div class="plan-state">
+                            <span>Yearly</span>
+                            <span>$55/Additional Member</span>
+                          </div>
+                        </span>
+                        <div class="plan-price">$199</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="custom-plan-head">Total Price</h3>
+              <div class="plan-head">
+                <div class="plan-state">
+                  <span>Additional ( Monthly Family Plan )</span>
+                  <span>( $25 × 2 Additional Members )</span>
+                </div>
+                <div class="plan-price">$50</div>
+              </div>
+              <button type="submit" class="custom-btn submit-btn">
+                Continue
+              </button>
+            </form>
           </div>
         </div>
       </div>
