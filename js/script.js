@@ -146,7 +146,7 @@ $(document).ready(function () {
   swiperImg.controller.control = swiperContent;
   // swiperContent.controller.control = swiperImg;
   const swiperVideos = new Swiper(".videos-swiper .swiper", {
-    loop: false,
+    loop: true,
     centeredSlides: true,
     slidesPerView: 1,
     // autoplay: {

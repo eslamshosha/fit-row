@@ -337,6 +337,10 @@ main {
 .features-section {
   margin-bottom: 75px;
   position: relative;
+  overflow: hidden;
+  .container {
+    overflow: hidden;
+  }
 }
 .features-section::after {
   content: "";
@@ -378,16 +382,16 @@ main {
   @include max-767 {
     font-size: 26px;
   }
-  .features-section &{
+  .features-section & {
     margin-bottom: 0;
   }
 }
 
 .features-cont {
   display: grid;
-  overflow: hidden;
+  // overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 64px;
+  padding-bottom: 65px;
   padding-top: 65px;
 }
 .features-list {
@@ -435,7 +439,7 @@ main {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    @include max-991{
+    @include max-991 {
       width: 300px;
       inset-inline-start: 0;
     }
@@ -444,7 +448,7 @@ main {
     .features-tips {
       inset-inline-start: unset;
       inset-inline-end: calc(100% + 5px);
-      @include max-991{
+      @include max-991 {
         width: 300px;
         inset-inline-start: 0;
         inset-inline-end: 0;
@@ -617,7 +621,7 @@ main {
   .features-cont {
     grid-template-columns: 1fr;
     gap: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -631,9 +635,17 @@ main {
 }
 .trainer-img-cont {
   display: flex;
+  justify-content: center;
   gap: 19px;
   width: 100%;
   max-width: 100%;
+  figure {
+    max-width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
   .trainer-img-wrapper {
     position: relative;
     padding-top: 40px;
@@ -700,7 +712,7 @@ main {
   .trainer-img-cont {
     justify-content: center;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     .trainer-img-wrapper {
       span {
         font-size: 12px;
@@ -908,11 +920,14 @@ main {
       width: 100%;
       text-align: center;
     }
+    img {
+      max-height: 540px;
+    }
   }
   .nav-pills {
     border-bottom: none;
     border: none;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     padding: 0;
     overflow: hidden;
     justify-content: center;

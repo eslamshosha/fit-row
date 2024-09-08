@@ -1044,6 +1044,10 @@ main {
 .features-section {
   margin-bottom: 75px;
   position: relative;
+  overflow: hidden;
+}
+.features-section .container {
+  overflow: hidden;
 }
 
 .features-section::after {
@@ -1092,9 +1096,8 @@ main {
 
 .features-cont {
   display: grid;
-  overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 64px;
+  padding-bottom: 65px;
   padding-top: 65px;
 }
 
@@ -1342,7 +1345,7 @@ html[dir=rtl] .features-icon2 img:not(.features-heart) {
   .features-cont {
     grid-template-columns: 1fr;
     gap: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 /* features-section */
@@ -1358,9 +1361,17 @@ html[dir=rtl] .features-icon2 img:not(.features-heart) {
 
 .trainer-img-cont {
   display: flex;
+  justify-content: center;
   gap: 19px;
   width: 100%;
   max-width: 100%;
+}
+.trainer-img-cont figure {
+  max-width: 100%;
+}
+.trainer-img-cont figure img {
+  max-width: 100%;
+  height: auto;
 }
 .trainer-img-cont .trainer-img-wrapper {
   position: relative;
@@ -1431,7 +1442,7 @@ html[dir=rtl] .features-icon2 img:not(.features-heart) {
   .trainer-img-cont {
     justify-content: center;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .trainer-img-cont .trainer-img-wrapper span {
     font-size: 12px;
@@ -1648,10 +1659,13 @@ html[dir=rtl] .features-icon2 img:not(.features-heart) {
   width: 100%;
   text-align: center;
 }
+.videos-cont .tab-content img {
+  max-height: 540px;
+}
 .videos-cont .nav-pills {
   border-bottom: none;
   border: none;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   padding: 0;
   overflow: hidden;
   justify-content: center;
