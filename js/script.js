@@ -299,6 +299,53 @@ $(document).ready(function () {
     }
     $parentElm.find(".qty-input").val(value);
   });
+
+  //woman mode
+  let womanmodeInput = $(".womanmodeInput");
+  let manmodeInput = $(".manmodeInput");
+  if (localStorage.getItem("woman-mode") == "true") {
+    $("body").addClass("woman-mode");
+    womanmodeInput.prop("checked", true);
+    $("#full-body-type").attr("src", "images/full-body-woman.png");
+    $("#location-1-shape").attr("src", "images/location-1-woman.png");
+    $("#location-2-shape").attr("src", "images/location-2-woman.png");
+  } else {
+    $("body").removeClass("woman-mode");
+    womanmodeInput.prop("checked", false);
+    $("#full-body-type").attr("src", "images/full-body.png");
+    $("#location-1-shape").attr("src", "images/location-1.png");
+    $("#location-2-shape").attr("src", "images/location-2.png");
+  }
+
+  $(".womanmodeInput").on("change", function () {
+    $("body").addClass("woman-mode");
+    if (this.checked) {
+      // if (this.classList[0] == "womanmodeInput") {
+      //   $(".switch-womanmode").prop("checked", true);
+      // } else {
+      //   $(".womanmodeInput").prop("checked", true);
+      // }
+      localStorage.setItem("woman-mode", "true");
+      $("#full-body-type").attr("src", "images/full-body-woman.png");
+      $("#loaction-1-shape").attr("src", "images/loaction-1-woman.png");
+      $("#loaction-2-shape").attr("src", "images/loaction-2-woman.png");
+    } else {
+      localStorage.setItem("woman-mode", "false");
+      $(".womanmodeInput").prop("checked", false);
+    }
+  });
+  $(".manmodeInput").on("change", function () {
+    $("body").removeClass("woman-mode");
+    if (this.checked) {
+      localStorage.setItem("woman-mode", "false");
+      $("#full-body-type").attr("src", "images/full-body.png");
+      $("#location-1-shape").attr("src", "images/location-1.png");
+      $("#location-2-shape").attr("src", "images/location-2.png");
+    } else {
+      localStorage.setItem("woman-mode", "true");
+      $(".manmodeInput").prop("checked", false);
+    }
+  });
 });
 ///////////
 //showPass

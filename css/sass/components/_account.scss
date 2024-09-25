@@ -323,7 +323,7 @@ body.account-page {
     font-size: 14px;
   }
   &:has(input:checked) {
-    background-color: #556c34;
+    background-color: $input-bg;
     border-color: $hover;
   }
   input[type="radio"],
@@ -1230,3 +1230,20 @@ body.account-page {
     max-width: 225px;
   }
 }
+#location-2-shape,
+#location-1-shape {
+  max-width: 211px;
+}
+// fieldset {
+//   .next.action-button {
+//     pointer-events: none;
+//     cursor: not-allowed;
+//   }
+//   &:has(input:checked) .next.action-button {
+//     pointer-events: painted;
+//     cursor: pointer;
+//   }
+//   &input:not(:placeholder-shown) {
+//     border-color: green;
+//   }
+// }
