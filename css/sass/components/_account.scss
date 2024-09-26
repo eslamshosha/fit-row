@@ -509,7 +509,16 @@ body.account-page {
         top: 218px;
       }
     }
+    @include max-767{
+      .legs{
+        bottom: 60px;
+      }
+      .abs{
+        bottom: 25px;
+      }
+    }
   }
+  
 }
 .check-col {
   display: flex;

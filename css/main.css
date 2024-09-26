@@ -4107,6 +4107,14 @@ html[dir=rtl] #msform .action-button-previous i {
     top: 218px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .woman-mode .full-body-cont .legs {
+    bottom: 60px;
+  }
+  .woman-mode .full-body-cont .abs {
+    bottom: 25px;
+  }
+}
 
 .check-col {
   display: flex;
