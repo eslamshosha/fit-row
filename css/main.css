@@ -4096,6 +4096,17 @@ html[dir=rtl] #msform .action-button-previous i {
 .full-body-cont input:checked ~ img {
   filter: brightness(0) saturate(100%) invert(98%) sepia(93%) saturate(922%) hue-rotate(28deg) brightness(106%) contrast(109%);
 }
+.woman-mode .full-body-cont input:checked ~ img {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(85%) saturate(628%) hue-rotate(213deg) brightness(102%) contrast(106%);
+}
+@media only screen and (min-width: 768px) {
+  .woman-mode .full-body-cont .arms {
+    top: 204px;
+  }
+  .woman-mode .full-body-cont .chest {
+    top: 218px;
+  }
+}
 
 .check-col {
   display: flex;

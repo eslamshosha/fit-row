@@ -496,6 +496,20 @@ body.account-page {
     filter: brightness(0) saturate(100%) invert(98%) sepia(93%) saturate(922%)
       hue-rotate(28deg) brightness(106%) contrast(109%);
   }
+  .woman-mode & {
+    input:checked ~ img {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(85%) saturate(628%)
+        hue-rotate(213deg) brightness(102%) contrast(106%);
+    }
+    @include min-768{
+      .arms {
+        top: 204px;
+      }
+      .chest {
+        top: 218px;
+      }
+    }
+  }
 }
 .check-col {
   display: flex;
