@@ -179,12 +179,32 @@ $(document).ready(function () {
     var opacity;
     var current = 1;
     var steps = $("fieldset").length;
+    var parentFieldset;
 
     setProgressBar(current);
 
     $(".next").click(function () {
       current_fs = $(this).parent().parent();
       next_fs = $(this).parent().parent().next();
+
+      //validtion
+      // parentFieldset = $(this).parent().parent("fieldset");
+      // parentFieldset.find("input").each(function () {
+      //   var thisValue = $(this).val();
+
+      //   if (thisValue == "on") {
+      //     // next_fs = false;
+      //     console.log($(this));
+          
+      //   } else {
+      //     // next_fs.show();
+      //     console.log("false");
+      //     console.log(thisValue);
+
+
+      //   }
+      // });
+      //validtion
 
       //Add Class Active
       $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
