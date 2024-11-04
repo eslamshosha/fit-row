@@ -501,7 +501,7 @@ body.account-page {
       filter: brightness(0) saturate(100%) invert(90%) sepia(85%) saturate(628%)
         hue-rotate(213deg) brightness(102%) contrast(106%);
     }
-    @include min-768{
+    @include min-768 {
       .arms {
         top: 204px;
       }
@@ -509,16 +509,15 @@ body.account-page {
         top: 218px;
       }
     }
-    @include max-767{
-      .legs{
+    @include max-767 {
+      .legs {
         bottom: 60px;
       }
-      .abs{
+      .abs {
         bottom: 25px;
       }
     }
   }
-  
 }
 .check-col {
   display: flex;
@@ -1276,3 +1275,34 @@ body.account-page {
 //     border-color: green;
 //   }
 // }
+@include min-992 {
+  .check-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+    .check-width {
+      margin-bottom: 0;
+    }
+    .check-label {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 40px 20px 12px;
+      height: 219px !important;
+      .checkmark {
+        position: absolute;
+        top: 12px;
+        inset-inline-start: 12px;
+      }
+      img {
+        max-height: 104px;
+      }
+    }
+  }
+}
+.check-grid {
+  margin-bottom: 40px;
+}
+.shape-card .payment-method {
+  padding-top: 0;
+}

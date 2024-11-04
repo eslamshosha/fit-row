@@ -159,8 +159,9 @@ $(document).ready(function () {
     },
   });
 
-  const circle = new CircularProgressBar("pie");
-  circle.initial();
+  // const circle = new CircularProgressBar("pie");
+  // circle.initial();
+
   //file input
   $(".custom-file-upload .upload-change").change(function () {
     let file_val;
@@ -195,12 +196,11 @@ $(document).ready(function () {
       //   if (thisValue == "on") {
       //     // next_fs = false;
       //     console.log($(this));
-          
+
       //   } else {
       //     // next_fs.show();
       //     console.log("false");
       //     console.log(thisValue);
-
 
       //   }
       // });
@@ -267,6 +267,11 @@ $(document).ready(function () {
       var percent = parseFloat(100 / steps) * curStep;
       percent = percent.toFixed();
       $(".progress-bar-form").css("width", percent + "%");
+
+      //hide progress-bar above 18 step
+      if (curStep > 18) {
+        $(".progress-form").css("display", "none");
+      }
     }
 
     $(".submit").click(function () {
@@ -323,6 +328,7 @@ $(document).ready(function () {
   //woman mode
   let womanmodeInput = $(".womanmodeInput");
   let manmodeInput = $(".manmodeInput");
+  let ageMeasure = $("#age-measure");
   if (localStorage.getItem("woman-mode") == "true") {
     $("body").addClass("woman-mode");
     womanmodeInput.prop("checked", true);
@@ -364,6 +370,41 @@ $(document).ready(function () {
     } else {
       localStorage.setItem("woman-mode", "true");
       $(".manmodeInput").prop("checked", false);
+    }
+  });
+  $(ageMeasure).on("change", function () {
+    if ($("body").hasClass("woman-mode")) {
+      if (ageMeasure.val() < 18) {
+        $("#skinny-shape").attr("src", "images/shape/girl/skinny.png");
+        $("#regular-shape").attr("src", "images/shape/girl/regular.png");
+        $("#extra-shape").attr("src", "images/shape/girl/extra.png");
+        $("#cut-shape").attr("src", "images/shape/girl/cut.png");
+        $("#bulk-shape").attr("src", "images/shape/girl/lean-bulk.png");
+        $("#extra-bulk-shape").attr("src", "images/shape/girl/extra-bulk.png");
+      } else {
+        $("#skinny-shape").attr("src", "images/shape/woman/skinny.png");
+        $("#regular-shape").attr("src", "images/shape/woman/regular.png");
+        $("#extra-shape").attr("src", "images/shape/woman/extra.png");
+        $("#cut-shape").attr("src", "images/shape/woman/cut.png");
+        $("#bulk-shape").attr("src", "images/shape/woman/lean-bulk.png");
+        $("#extra-bulk-shape").attr("src", "images/shape/woman/extra-bulk.png");
+      }
+    } else {
+      if (ageMeasure.val() < 18) {
+        $("#skinny-shape").attr("src", "images/shape/boy/skinny.png");
+        $("#regular-shape").attr("src", "images/shape/boy/regular.png");
+        $("#extra-shape").attr("src", "images/shape/boy/extra.png");
+        $("#cut-shape").attr("src", "images/shape/boy/cut.png");
+        $("#bulk-shape").attr("src", "images/shape/boy/lean-bulk.png");
+        $("#extra-bulk-shape").attr("src", "images/shape/boy/extra-bulk.png");
+      } else {
+        $("#skinny-shape").attr("src", "images/shape/man/skinny.png");
+        $("#regular-shape").attr("src", "images/shape/man/regular.png");
+        $("#extra-shape").attr("src", "images/shape/man/extra.png");
+        $("#cut-shape").attr("src", "images/shape/man/cut.png");
+        $("#bulk-shape").attr("src", "images/shape/man/lean-bulk.png");
+        $("#extra-bulk-shape").attr("src", "images/shape/man/extra-bulk.png");
+      }
     }
   });
 });
@@ -412,3 +453,38 @@ function preloadImage(img) {
     // img.parentElement.parentElement.classList.add("lazy-head-img");
   };
 }
+window.addEventListener('DOMContentLoaded', () => {
+  // get all progress bar
+  const elements = [].slice.call(document.querySelectorAll('.pie'));
+  // call to function
+  const circle = new CircularProgressBar('pie');
+
+  // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  // if IntersectionObserver is supported by the browser
+  if ('IntersectionObserver' in window) {
+    const config = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.75,
+    };
+
+    const ovserver = new IntersectionObserver((entries, observer) => {
+      entries.map((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.75) {
+          circle.initial(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, config);
+
+    elements.map((item) => {
+      ovserver.observe(item);
+    });
+  } else {
+    // if the browser does not support IntersectionObserver
+    // we run all progress bars at once
+    elements.map((element) => {
+      circle.initial(element);
+    });
+  }
+});

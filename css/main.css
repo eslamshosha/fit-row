@@ -16,7 +16,7 @@
 body.woman-mode {
   --main-color: #1c1c1c;
   --main-hover: #FFC8FD;
-  --input-bg: #f35eee;
+  --input-bg: #443943;
   --button-bg: #f35eee;
 }
 
@@ -4918,4 +4918,37 @@ input:checked ~ .check-col span:last-child {
 #location-2-shape,
 #location-1-shape {
   max-width: 211px;
+}
+
+@media only screen and (min-width: 992px) {
+  .check-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .check-grid .check-width {
+    margin-bottom: 0;
+  }
+  .check-grid .check-label {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 40px 20px 12px;
+    height: 219px !important;
+  }
+  .check-grid .check-label .checkmark {
+    position: absolute;
+    top: 12px;
+    inset-inline-start: 12px;
+  }
+  .check-grid .check-label img {
+    max-height: 104px;
+  }
+}
+.check-grid {
+  margin-bottom: 40px;
+}
+
+.shape-card .payment-method {
+  padding-top: 0;
 }/*# sourceMappingURL=main.css.map */

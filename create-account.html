@@ -30,7 +30,10 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/css/intlTelInput.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/css/intlTelInput.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -64,7 +67,7 @@
             <div class="fieldset-cont">
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>1</span> / 26</h2>
+                  <h2 class="steps"><span>0</span> / 17</h2>
                   <h2 class="fs-title">CHOOSE GENDER</h2>
 
                   <div class="gender-cont">
@@ -76,7 +79,11 @@
                       </span>
                     </label>
                     <label class="gender-label">
-                      <input type="radio" name="gender"  class="womanmodeInput"/>
+                      <input
+                        type="radio"
+                        name="gender"
+                        class="womanmodeInput"
+                      />
                       <span class="gender-span">
                         <img src="images/female.png" alt="gender" />
                         <span>woman</span>
@@ -93,7 +100,416 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>2</span> / 26</h2>
+                  <h2 class="steps"><span>1</span> / 17</h2>
+                  <h2 class="fs-title">How old are you</h2>
+
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="form-group">
+                        <input
+                          type="number"
+                          class="measure-input"
+                          placeholder="0"
+                          id="age-measure"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <h2 class="steps"><span>2</span> / 17</h2>
+                  <h2 class="fs-title">How tall are you</h2>
+
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="check-group">
+                        <div class="measure-btn">
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input
+                                  type="radio"
+                                  name="tall"
+                                  value="cm"
+                                  class="radiogroup"
+                                  checked
+                                />
+                                <span class="check-text">cm</span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input
+                                  type="radio"
+                                  name="tall"
+                                  value="ft"
+                                  class="radiogroup"
+                                />
+                                <span class="check-text">ft</span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="measure-parent">
+                        <input
+                          type="number"
+                          class="measure-input"
+                          placeholder="0"
+                        />
+                        <div class="radio-text">cm</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <h2 class="steps"><span>3</span> / 17</h2>
+                  <h2 class="fs-title">WHAT IS YOUR CURRENT WEIGHT</h2>
+
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="check-group">
+                        <div class="measure-btn">
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input
+                                  type="radio"
+                                  name="weight"
+                                  class="radiogroup"
+                                  value="kg"
+                                  checked
+                                />
+                                <span class="check-text">kg</span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input
+                                  type="radio"
+                                  name="weight"
+                                  class="radiogroup"
+                                  value="lPs"
+                                />
+                                <span class="check-text">lbs</span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="measure-parent">
+                        <input
+                          type="number"
+                          class="measure-input"
+                          placeholder="0"
+                        />
+                        <div class="radio-text">kg</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <h2 class="steps"><span>4</span> / 17</h2>
+                  <h2 class="fs-title">WHAT IS YOUR GOAL WEIGHT</h2>
+
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="check-group">
+                        <div class="measure-btn">
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input
+                                  type="radio"
+                                  value="kg"
+                                  name="goal"
+                                  class="radiogroup"
+                                  checked
+                                />
+                                <span class="check-text">kg</span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="check-width">
+                            <label class="check-label">
+                              <span class="payment-radio">
+                                <input
+                                  type="radio"
+                                  value="lbs"
+                                  name="goal"
+                                  class="radiogroup"
+                                />
+                                <span class="check-text">lbs</span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="measure-parent">
+                        <input
+                          type="number"
+                          class="measure-input"
+                          placeholder="0"
+                        />
+                        <div class="radio-text">kg</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card shape-card">
+                  <h2 class="steps"><span>5</span> / 17</h2>
+                  <h2 class="fs-title">CHOOSE YOUR BODY TYPE</h2>
+
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="check-group check-grid">
+                        <div class="check-width">
+                          <label class="check-label" style="height: 103px">
+                            <span class="payment-radio">
+                              <input type="radio" name="body" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">SKINNY</span>
+                            </span>
+                            <img
+                              src="images/shape/man/skinny.png"
+                              alt="body-shape"
+                              class="img-fluid"
+                              id="skinny-shape"
+                            />
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label" style="height: 103px">
+                            <span class="payment-radio">
+                              <input type="radio" name="body" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">REGULAR</span>
+                            </span>
+                            <img
+                              src="images/shape/man/regular.png"
+                              alt="body-shape"
+                              class="img-fluid"
+                              id="regular-shape"
+                            />
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label" style="height: 103px">
+                            <span class="payment-radio">
+                              <input type="radio" name="body" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">EXTRA</span>
+                            </span>
+                            <img
+                              src="images/shape/man/extra.png"
+                              alt="body-shape"
+                              class="img-fluid"
+                              id="extra-shape"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="fs-title">CHOOSE YOUR DESIRED BODY TYPE</h2>
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="check-group check-grid">
+                        <div class="check-width">
+                          <label class="check-label" style="height: 103px">
+                            <span class="payment-radio">
+                              <input type="radio" name="desired" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">CUT</span>
+                            </span>
+                            <img
+                              src="images/shape/man/cut.png"
+                              alt="body-shape"
+                              class="img-fluid"
+                              id="cut-shape"
+                            />
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label" style="height: 103px">
+                            <span class="payment-radio">
+                              <input type="radio" name="desired" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">LEAN BULK</span>
+                            </span>
+                            <img
+                              src="images/shape/man/lean-bulk.png"
+                              alt="body-shape"
+                              class="img-fluid"
+                              id="bulk-shape"
+                            />
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label" style="height: 103px">
+                            <span class="payment-radio">
+                              <input type="radio" name="desired" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">EXTRA BULK</span>
+                            </span>
+                            <img
+                              src="images/shape/man/extra-bulk.png"
+                              alt="body-shape"
+                              class="img-fluid"
+                              id="extra-bulk-shape"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <h2 class="steps"><span>6</span> / 17</h2>
+                  <h2 class="fs-title">CHOOSE YOUR target zone</h2>
+
+                  <div class="form-group">
+                    <div class="full-body-cont">
+                      <div class="check-width">
+                        <label class="main-label arms">
+                          <input type="checkbox" />
+                          <span>ARMS</span>
+                          <img src="images/arm-after.png" />
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="main-label abs">
+                          <input type="checkbox" />
+                          <span>abs</span>
+                          <img src="images/abs-after.png" />
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="main-label chest">
+                          <input type="checkbox" />
+                          <span>chest</span>
+                          <img src="images/chest-after.png" />
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="main-label legs">
+                          <input type="checkbox" />
+                          <span>legs</span>
+                          <img src="images/legs-after.png" />
+                        </label>
+                      </div>
+                      <figure>
+                        <img
+                          src="images/full-body.png"
+                          id="full-body-type"
+                          alt="body"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <h2 class="steps"><span>7</span> / 17</h2>
                   <h2 class="fs-title">Choose main goal</h2>
                   <div class="form-group">
                     <div class="check-group">
@@ -166,7 +582,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>3</span> / 26</h2>
+                  <h2 class="steps"><span>8</span> / 17</h2>
                   <h2 class="fs-title">Choose Training Goal</h2>
                   <div class="form-group">
                     <div class="check-group">
@@ -211,7 +627,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>4</span> / 26</h2>
+                  <h2 class="steps"><span>9</span> / 17</h2>
                   <h2 class="fs-title">What Motivates You To Exercise?</h2>
                   <div class="form-group">
                     <div class="check-group">
@@ -270,281 +686,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>5</span> / 26</h2>
-                  <h2 class="fs-title">CHOOSE YOUR BODY TYPE</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label" style="height: 103px">
-                            <span class="payment-radio">
-                              <input type="radio" name="body" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">SKINNY</span>
-                            </span>
-                            <img
-                              src="images/body-1.png"
-                              alt="body-shape"
-                              class="img-fluid"
-                            />
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label" style="height: 103px">
-                            <span class="payment-radio">
-                              <input type="radio" name="body" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">REGULAR</span>
-                            </span>
-                            <img
-                              src="images/body-2.png"
-                              alt="body-shape"
-                              class="img-fluid"
-                            />
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label" style="height: 103px">
-                            <span class="payment-radio">
-                              <input type="radio" name="body" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">EXTRA</span>
-                            </span>
-                            <img
-                              src="images/body-3.png"
-                              alt="body-shape"
-                              class="img-fluid"
-                            />
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>6</span> / 26</h2>
-                  <h2 class="fs-title">CHOOSE YOUR DESIRED BODY TYPE</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label" style="height: 103px">
-                            <span class="payment-radio">
-                              <input type="radio" name="desired" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">CUT</span>
-                            </span>
-                            <img
-                              src="images/desired-1.png"
-                              alt="body-shape"
-                              class="img-fluid"
-                            />
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label" style="height: 103px">
-                            <span class="payment-radio">
-                              <input type="radio" name="desired" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">LEAN BULK</span>
-                            </span>
-                            <img
-                              src="images/desired-2.png"
-                              alt="body-shape"
-                              class="img-fluid"
-                            />
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label" style="height: 103px">
-                            <span class="payment-radio">
-                              <input type="radio" name="desired" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">EXTRA BULK</span>
-                            </span>
-                            <img
-                              src="images/desired-3.png"
-                              alt="body-shape"
-                              class="img-fluid"
-                            />
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>7</span> / 26</h2>
-                  <h2 class="fs-title">CHOOSE YOUR target zone</h2>
-
-                  <div class="form-group">
-                    <div class="full-body-cont">
-                      <div class="check-width">
-                        <label class="main-label arms">
-                          <input type="checkbox" />
-                          <span>ARMS</span>
-                          <img src="images/arm-after.png" />
-                        </label>
-                      </div>
-                      <div class="check-width">
-                        <label class="main-label abs">
-                          <input type="checkbox" />
-                          <span>abs</span>
-                          <img src="images/abs-after.png" />
-                        </label>
-                      </div>
-                      <div class="check-width">
-                        <label class="main-label chest">
-                          <input type="checkbox" />
-                          <span>chest</span>
-                          <img src="images/chest-after.png" />
-                        </label>
-                      </div>
-                      <div class="check-width">
-                        <label class="main-label legs">
-                          <input type="checkbox" />
-                          <span>legs</span>
-                          <img src="images/legs-after.png" />
-                        </label>
-                      </div>
-                      <figure>
-                        <img src="images/full-body.png" id="full-body-type" alt="body" />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>8</span> / 26</h2>
-                  <h2 class="fs-title">
-                    When was the last time you were happy with your body image?
-                  </h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="time" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >LESS THAN A YEAR AGO</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="time" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">1 TO 2 YEARS AGO</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="time" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >MORE THAN 3 YEARS AGO</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="time" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >I’M HAPPY WITH MY WEIGHT</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="time" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">NEVER</span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>9</span> / 26</h2>
+                  <h2 class="steps"><span>10</span> / 17</h2>
                   <h2 class="fs-title">Choose FITNESS level</h2>
 
                   <div class="form-group">
@@ -607,7 +749,61 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>10</span> / 26</h2>
+                  <h2 class="steps"><span>11</span> / 17</h2>
+                  <h2 class="fs-title">HOW MUCH DO YOU WALK DAILY?</h2>
+
+                  <div class="form-group">
+                    <div class="payment-method">
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="WALK" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">LESS THAN 1 HOUR</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="walk" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">1-2 HOURS</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="walk" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">MORE THAN 2 HOURS</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="button" name="next" class="next action-button">
+                    continue
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <h2 class="steps"><span>12</span> / 17</h2>
                   <h2 class="fs-title">HOW MANY PUSH-UPS CAN YOU DO?</h2>
 
                   <div class="form-group">
@@ -679,7 +875,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>11</span> / 26</h2>
+                  <h2 class="steps"><span>13</span> / 17</h2>
                   <h2 class="fs-title">DO YOU LIVE A SEDENTARY LIFESTYLE?</h2>
 
                   <div class="form-group">
@@ -724,210 +920,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>12</span> / 26</h2>
-                  <h2 class="fs-title">HOW MUCH DO YOU WALK DAILY?</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="WALK" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">LESS THAN 1 HOUR</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="walk" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">1-2 HOURS</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="walk" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">MORE THAN 2 HOURS</span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>13</span> / 26</h2>
-                  <h2 class="fs-title">HOW DO YOU FEEL BETWEEN MEALS?</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="meals" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >I GET SLEEPY WHEN I’M HUNGRY</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="meals" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >I’M TIRED AFTER I EAT</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="meals" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >I HAVE ENOUGH ENERGY</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="meals" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >I FEEL TIRED WHEN I OVEREAT</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="meals" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >I FEEL IRRITABLE WHEN I’M HUNGRY</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>14</span> / 26</h2>
-                  <h2 class="fs-title">HOW MUCH SLEEP DO YOU GET?</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="sleep" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">FEWER THAN 5 HOURS</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="sleep" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >BETWEEN 5 AND 6 HOURS</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="sleep" />
-                              <span class="checkmark"></span>
-                              <span class="check-text"
-                                >BETWEEN 7 AND 8 HOURS</span
-                              >
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="sleep" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">OVER 8 HOURS</span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>15</span> / 26</h2>
+                  <h2 class="steps"><span>14</span> / 17</h2>
                   <h2 class="fs-title">WHAT’S YOUR WATER CONSUMPTION LIKE?</h2>
 
                   <div class="form-group">
@@ -1009,49 +1002,52 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>16</span> / 26</h2>
-                  <h2 class="fs-title">How tall are you</h2>
+                  <h2 class="steps"><span>15</span> / 17</h2>
+                  <h2 class="fs-title">HOW MUCH SLEEP DO YOU GET?</h2>
 
                   <div class="form-group">
                     <div class="payment-method">
                       <div class="check-group">
-                        <div class="measure-btn">
-                          <div class="check-width">
-                            <label class="check-label">
-                              <span class="payment-radio">
-                                <input
-                                  type="radio"
-                                  name="tall"
-                                  value="cm"
-                                  class="radiogroup"
-                                  checked
-                                />
-                                <span class="check-text">cm</span>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="check-width">
-                            <label class="check-label">
-                              <span class="payment-radio">
-                                <input
-                                  type="radio"
-                                  name="tall"
-                                  value="ft"
-                                  class="radiogroup"
-                                />
-                                <span class="check-text">ft</span>
-                              </span>
-                            </label>
-                          </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="sleep" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">FEWER THAN 5 HOURS</span>
+                            </span>
+                          </label>
                         </div>
-                      </div>
-                      <div class="measure-parent">
-                        <input
-                          type="number"
-                          class="measure-input"
-                          placeholder="0"
-                        />
-                        <div class="radio-text">cm</div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="sleep" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >BETWEEN 5 AND 6 HOURS</span
+                              >
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="sleep" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >BETWEEN 7 AND 8 HOURS</span
+                              >
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="sleep" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">OVER 8 HOURS</span>
+                            </span>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1073,50 +1069,68 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>17</span> / 26</h2>
-                  <h2 class="fs-title">WHAT IS YOUR CURRENT WEIGHT</h2>
+                  <h2 class="steps"><span>16</span> / 17</h2>
+                  <h2 class="fs-title">HOW DO YOU FEEL BETWEEN MEALS?</h2>
 
                   <div class="form-group">
                     <div class="payment-method">
                       <div class="check-group">
-                        <div class="measure-btn">
-                          <div class="check-width">
-                            <label class="check-label">
-                              <span class="payment-radio">
-                                <input
-                                  type="radio"
-                                  name="weight"
-                                  class="radiogroup"
-                                  value="kg"
-                                  checked
-                                />
-                                <span class="check-text">kg</span>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="check-width">
-                            <label class="check-label">
-                              <span class="payment-radio">
-                                <input
-                                  type="radio"
-                                  name="weight"
-                                  class="radiogroup"
-                                  value="lPs"
-                                />
-                                <span class="check-text">lbs</span>
-                              </span>
-                            </label>
-                          </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="meals" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >I GET SLEEPY WHEN I’M HUNGRY</span
+                              >
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="meals" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >I’M TIRED AFTER I EAT</span
+                              >
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="meals" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >I HAVE ENOUGH ENERGY</span
+                              >
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="meals" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >I FEEL TIRED WHEN I OVEREAT</span
+                              >
+                            </span>
+                          </label>
+                        </div>
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="payment-radio">
+                              <input type="radio" name="meals" />
+                              <span class="checkmark"></span>
+                              <span class="check-text"
+                                >I FEEL IRRITABLE WHEN I’M HUNGRY</span
+                              >
+                            </span>
+                          </label>
                         </div>
                       </div>
-                      <div class="measure-parent">
-                        <input
-                          type="number"
-                          class="measure-input"
-                          placeholder="0"
-                        />
-                        <div class="radio-text">kg</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1137,103 +1151,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>18</span> / 26</h2>
-                  <h2 class="fs-title">WHAT IS YOUR GOAL WEIGHT</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="measure-btn">
-                          <div class="check-width">
-                            <label class="check-label">
-                              <span class="payment-radio">
-                                <input
-                                  type="radio"
-                                  value="kg"
-                                  name="goal"
-                                  class="radiogroup"
-                                  checked
-                                />
-                                <span class="check-text">kg</span>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="check-width">
-                            <label class="check-label">
-                              <span class="payment-radio">
-                                <input
-                                  type="radio"
-                                  value="lbs"
-                                  name="goal"
-                                  class="radiogroup"
-                                />
-                                <span class="check-text">lbs</span>
-                              </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="measure-parent">
-                        <input
-                          type="number"
-                          class="measure-input"
-                          placeholder="0"
-                        />
-                        <div class="radio-text">kg</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>19</span> / 26</h2>
-                  <h2 class="fs-title">How old are you</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="form-group">
-                        <input
-                          type="number"
-                          class="measure-input"
-                          placeholder="0"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>20</span> / 26</h2>
+                  <h2 class="steps"><span>17</span> / 17</h2>
                   <h2 class="fs-title">CHOOSE YOUR TRAINING LOCATION</h2>
 
                   <div class="form-group">
@@ -1304,181 +1222,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>21</span> / 26</h2>
-                  <h2 class="fs-title">
-                    AS WE BUILD YOUR PERSONAL PLAN, WHAT ELSE ARE YOU INTERESTED
-                    IN?
-                  </h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">BRAIN FUNCTION</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">BEHAVIOR</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">DIGESTION</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">SLEEP</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">STRESS</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">ENERGY</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="PLAN" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">NUTRITION</span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>22</span> / 26</h2>
-                  <h2 class="fs-title">WHAT IS YOUR DIEt?</h2>
-
-                  <div class="form-group">
-                    <div class="payment-method">
-                      <div class="check-group">
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="diet" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">Standard</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="diet" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">Vegan</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="diet" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">Keto</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="diet" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">Carnivore</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="diet" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">Low carb</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="check-width">
-                          <label class="check-label">
-                            <span class="payment-radio">
-                              <input type="radio" name="diet" />
-                              <span class="checkmark"></span>
-                              <span class="check-text">High Protein</span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-btn-cont">
-                  <button
-                    type="button"
-                    name="previous"
-                    class="previous action-button-previous"
-                    value="Previous"
-                  >
-                    <i class="fa-regular fa-angle-left"></i>
-                  </button>
-                  <button type="button" name="next" class="next action-button">
-                    continue
-                    <i class="fa-regular fa-angle-right"></i>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <h2 class="steps"><span>23</span> / 26</h2>
+                  <!-- <h2 class="steps"><span>23</span> / 17</h2> -->
                   <h2 class="fs-title">Select your workout days</h2>
                   <p class="fs-pargh">
                     The World Health Organization recommends to do activities to
@@ -1578,7 +1322,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>24</span> / 26</h2>
+                  <!-- <h2 class="steps"><span>24</span> / 17</h2> -->
                   <h2 class="fs-title">Summary of your fitness level</h2>
 
                   <div class="form-group">
@@ -1659,7 +1403,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>25</span> / 26</h2>
+                  <!-- <h2 class="steps"><span>25</span> / 17</h2> -->
                   <h2 class="fs-title">Creating your personal plan</h2>
 
                   <div
@@ -1684,7 +1428,7 @@
               </fieldset>
               <fieldset>
                 <div class="form-card">
-                  <h2 class="steps"><span>26</span> / 26</h2>
+                  <!-- <h2 class="steps"><span>17</span> / 17</h2> -->
                   <h2 class="fs-title">Sign up recommendation</h2>
                   <p class="fs-text">create an account to save your progress</p>
                   <div class="form-group">
@@ -1701,20 +1445,20 @@
                   <div class="login-link">
                     Already have an account? <a href="login.html">Login</a>
                   </div>
-                  <div class="form-btn-cont">
-                    <button
-                      type="button"
-                      name="previous"
-                      class="previous action-button-previous"
-                      value="Previous"
-                    >
-                      <i class="fa-regular fa-angle-left"></i>
-                    </button>
-                    <button type="submit" href="#" class="next-btn">
-                      Sign Up
-                      <i class="fa-regular fa-angle-right"></i>
-                    </button>
-                  </div>
+                </div>
+                <div class="form-btn-cont">
+                  <button
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  >
+                    <i class="fa-regular fa-angle-left"></i>
+                  </button>
+                  <button type="submit" href="#" class="next-btn">
+                    Sign Up
+                    <i class="fa-regular fa-angle-right"></i>
+                  </button>
                 </div>
               </fieldset>
             </div>
