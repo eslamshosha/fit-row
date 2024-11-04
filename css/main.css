@@ -4948,6 +4948,9 @@ input:checked ~ .check-col span:last-child {
 .check-grid {
   margin-bottom: 40px;
 }
+.check-grid .check-label img {
+  max-height: 104px;
+}
 
 .shape-card .payment-method {
   padding-top: 0;

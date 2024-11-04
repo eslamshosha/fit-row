@@ -1302,6 +1302,11 @@ body.account-page {
 }
 .check-grid {
   margin-bottom: 40px;
+  .check-label {
+    img {
+      max-height: 104px;
+    }
+  }
 }
 .shape-card .payment-method {
   padding-top: 0;
