@@ -1005,6 +1005,7 @@ main {
   height: 100%;
 }
 .about-img-cont::after {
+  display:none;
   content: "";
   position: absolute;
   top: 104px;
