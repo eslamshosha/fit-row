@@ -962,6 +962,7 @@ main {
 .about-img-cont {
   position: relative;
   min-width: 0;
+  overflow: hidden;
   --swiper-image-ratio: 33.3%; /* ratio 16:9 = 56.25% */
   --swiper-width: 50%;
   --swiper-inactive-scale: 0.85; /* makes the other slide smaller */
@@ -997,7 +998,7 @@ main {
   position: relative;
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 188/398;
+/*   aspect-ratio: 188/398; */
   margin-bottom: 0;
 }
 .about-img-cont img {
